@@ -1,0 +1,252 @@
+/*
+* @Author: YaYu
+* @Date:   2017-10-30 09:41:51
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-30 16:58:44
+*/
+@import "header.css";
+body{
+	background: #fcfcfc;
+}
+.titleView{
+	width: 960px;
+	height: 124px;
+	background-image: linear-gradient(90deg,#d1dae1,#ededed);
+	margin: 0 auto;
+}
+.titlePhoto{
+	width: 260px;
+	height: 102px;
+	padding-top: 22px;
+	margin: 0 auto;	
+	background: #d1dae1;
+	background-image: linear-gradient(90deg,#dbe1e5,#e3e6e9);
+	position: relative;
+}
+.titleImg{
+	width: 260px;
+	height: 102px;
+	padding-top: 22px;
+	background: #d1dae1;
+	background-image: linear-gradient(90deg,#dbe1e5,#e3e6e9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	transition: all 0.5s;
+}
+.titleImg:hover{
+	height: 110px;
+}
+.titleImg>a{
+	display: block;
+	width: 80px;
+	height: 80px;
+	box-shadow: 0px 0px 4px 1px #ad506c;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.titleImg>a>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.titleInfo{
+	width: 260px;
+	height: 140px;
+	background-image: linear-gradient(90deg,#d1dae1,#ededed);
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	padding-top: 30px;
+	opacity: 0;
+}
+.userName{
+	text-align: center;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+.userLevel{
+	text-align: center;
+	font-size: 14px;
+}
+.userLevel>.icon-dengji{
+	font-size: 16px;
+	color: #eaad2a;
+}
+.levelName{
+	font-weight: 700;
+	color: #c6701d;
+}
+.userLevel>.icon-cat{
+	font-size: 16px;
+	color: #3c86f3;
+	font-weight: 700;
+	margin-left: 20px;
+}
+.blogRz{
+	color: #3c86f3;
+}
+.surplus{
+	margin-top: 30px;
+    font-size: 16px;
+    line-height: 14px;
+    color: #969696;
+	text-align: center;
+}
+.surplus>.iconfont{
+	font-size: 20px;
+	color: #eaad2a;
+	margin-right: 2px;
+}
+/* 财富概况 */
+.moneyView{
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0 10px;
+	border-bottom: 1px solid #d1dae1;
+	font-size: 18px;
+	font-weight: 500;
+}
+.moneyArea{
+	width: 960px;
+	margin: 0 auto;
+	padding: 34px 0 0;
+	overflow: hidden;
+	background: #F4F5FC;
+}
+.moneyL,.moneyM,.moneyR{
+	width: 320px;
+	height: 320px;
+	float: left;
+}
+.allMoney{
+	text-align: center;
+	font-size: 16px;
+}
+.allMoney>span{
+	color: #eaad2a;
+	margin-left: 10px;
+}
+.allCircleB{
+	width: 160px;
+	height: 160px;
+	background: #333;
+	border-radius: 50%;
+	margin: 52px auto;
+	position: relative;
+	overflow: hidden;
+}
+.allCircleS{
+	width: 130px;
+	height: 130px;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	background: #66757d;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 9;
+	box-sizing: border-box;
+	padding-top: 26px;
+}
+.allCircleS>P:first-child{
+	font-size: 20px;
+	font-weight: 700;
+	color: #04bfbf;
+}
+.allCircleS>P:nth-child(2){
+	font-size: 22px;
+	font-weight: 700;
+	color: #eaad2a;
+}
+.allCircleS>P:nth-child(3){
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.shapO,.shapT,.shapF,.shapS{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+}
+.shapO{
+	background: #a9cf54;
+	left: 0;
+	top: 0;
+}
+.shapT{
+	background: #f7e967;
+	right: 0;
+	top: 0;
+}
+.shapF{
+	background: #04bfbf;
+	left: 0;
+	bottom: 0;
+}
+.shapS{
+	background: #04bfbf;
+	right: 0;
+	bottom: 0;
+}
+.blogBuy{
+	width: 228px;
+    height: 86px;
+    background: #ffffff;
+    padding: 30px 0;
+    margin: 50px auto 40px;
+}
+.blogBuy>h3{
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.blogBuy>a{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #42c02e;
+}
+.seePage{
+	display: block;
+	width: 73px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: #0ae;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+.hint{
+	text-align: center;
+	font-size: 16px;
+}
+.hint>span{
+	font-size: 16px;
+	color: #ea6f5a;
+}
+.rechaarge{
+	display: block;
+	padding: 6px 0;
+    width: 120px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #42c02e;
+    margin: 60px auto 30px;
+}
+.elseHint{
+	font-size: 13px;
+    color: #969696;
+   	padding-left: 84px;
+}

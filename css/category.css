@@ -1,0 +1,128 @@
+/*
+* @Author: YaYu
+* @Date:   2017-10-25 16:06:58
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-26 18:01:34
+*/
+@import "header.css";
+body{
+	background: #fcfcfc;
+}
+/* 分类头部 */
+.cateTitle{
+	width: 960px;
+	height: 150px;
+	background-image: linear-gradient(90deg,rgba(192, 102, 169, 0.5),rgba(68, 190, 192, 0.5));
+	text-align: center;
+	margin: 0 auto;
+	box-shadow: 0 4px 20px 0px rgba(68, 190, 192, 0.5);
+	overflow: hidden;
+	position: relative;
+}
+.cateTitle>h3{
+	font-size: 38px;
+	color: #000;
+	margin-top: 48px;
+}
+.whiteLogo{
+	width: 120px;
+	height: 74px;
+	background: url('../img/whiteBlog.png') no-repeat center/cover;
+	position: absolute;
+	top: 36px;
+	left: 280px;
+}
+.topicView{
+	width: 960px;
+	padding-top: 40px;
+	height: auto;
+	margin: 0 auto;
+}
+.topicList{
+	width: 960px;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.topic{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+	margin-bottom: 24px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.topicA{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	z-index: 9;
+}
+.circleTitle{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background: rgba(81, 81, 81, 0.8);
+	position: absolute;
+	top: -54px;
+	left: -54px;
+	box-sizing: border-box;
+	padding-left: 64px;
+	padding-top: 66px;
+	color: #e1e1e1;
+	font-size: 18px;
+	font-weight: 600;
+	box-shadow: 0 0 20px 0 #fff;
+	transform: rotate(15deg);
+	transition: all 0.5s;
+	z-index: 3;
+}
+.topic:hover{
+	box-shadow: 0 4px 12px 2px #747575;
+	transform: translateY(-2px);
+}
+.topic:hover .circleTitle{
+	box-shadow: 0 50px 200px 50px #fff;
+	opacity: 0;
+}
+.boxCircleT{
+	width: 300px;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: -150px;
+	left: -40px;
+	z-index: 2;
+	transition: all 1s;
+	opacity: 0;
+}
+.boxCircleT>.toppicTitle{
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 26px;
+	margin-top: 90px;
+}
+.boxCircleB{
+	width: 300px;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	bottom: -150px;
+	left: -40px;
+	transition: all 1s;
+	opacity: 0;
+}
+.topic:hover .boxCircleT{
+	opacity: 1;
+	top: 0;
+}
+.topic:hover .boxCircleB{
+	opacity: 1;
+	bottom: 0;
+}

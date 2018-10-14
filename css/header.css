@@ -1,0 +1,265 @@
+/*
+* @Author: YaYu
+* @Date:   2017-10-23 10:40:17
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-29 00:47:38
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "微软雅黑","黑体","宋体",sans-serif;
+}
+/*未登录头部 */
+.head{
+	width: 100%;
+	height: 55px;
+	background-image: linear-gradient(90deg,#d1dae1,#ededed);
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #f0f0f0;
+	z-index: 999;
+}
+.logo{
+	width: 80px;
+	height: 48px;
+	background: url("../img/blogLogo.png") no-repeat center/cover;
+	float: left;
+	margin-left: 50px;
+	margin-top: 2px;
+}
+.main{
+	width: 960px;
+	height: 100%;
+	float: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    display: none;
+}
+.indexPage{
+	display: block;
+	height: 26px;
+	padding: 15px 0;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #3c86f3;
+	float: left;
+	margin-right: 40px;
+}
+.searchView{
+	float: left;
+	width: 162px;
+	margin-top: 9px;
+	height: 46px;
+	position: relative;
+}
+.search{
+	float: left;
+	width: 162px;
+	height: 38px;
+	border: none;
+	outline: none;
+	border-radius: 50px;
+    width: 450px;
+    background: rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #acacac;
+    box-shadow: 0 0 10px 0 #b4b5b5 inset;
+}
+.searBtn{
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 50%;
+	background:  rgba(0,0,0,0);
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}
+.searBtn>.iconfont{
+	font-size: 16px;
+	font-weight: bold;
+	color: #acacac;
+}
+.login{
+	float: right;
+	width: 78px;
+	height: 36px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 36px;
+	color: #969696;
+	text-align: center;
+	margin-top: 12px;
+	margin-right: 15px;
+	border-radius: 20px;
+}
+.login:hover{
+	background-image: linear-gradient(90deg,#c066a9,#44bec0);
+	color: #fff;
+}
+.register{
+	float: right;
+	width: 78px;
+	height: 36px;
+	border: 1px solid #89898a;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #3c86f3;
+	text-align: center;
+	margin-top: 10px;
+}
+.register:hover{
+	background-image: linear-gradient(90deg,#c066a9,#44bec0);
+	color: #fff;
+}
+/* 登录后样式 */
+.mainTwo{
+	width: 960px;
+	height: 100%;
+	float: left;
+	/* background: #fff; */
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /* display: none; */
+}
+.indexPageT,.indexPageG,.indexPageM{
+	display: block;
+	width: 64px;
+	height: 26px;
+	padding: 15px 0;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 26px;
+	float: left;
+}
+.indexPageT{
+	color: #3c86f3;
+}
+.indexPageG,.indexPageM{
+	text-align: center;
+	color: #333333;
+}
+.indexPageG{
+	margin-right: 10px;
+}
+.indexPageM{
+	margin-right: 20px;
+}
+.indexPageG:hover{
+	background: rgba(54, 134, 255, 0.3);
+}
+.indexPageM:hover{
+	background: rgba(54, 134, 255, 0.3);
+}
+.user{
+	width: 88px;
+	height: 55px;
+	float: right;
+	position: relative;
+}
+.user:hover{
+	background: rgba(54, 134, 255, 0.3);
+}
+.user:hover .userCon{
+	display: block;
+}
+.userPhoto{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-top: 8px;
+	margin-left: 20px;
+}
+.userPhoto>img{
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.userPhoto::after{
+	display: block;
+	content: "";
+	width: 0;
+	height: 0;
+	border: 6px solid rgba(153, 153, 153, 0);
+	border-top: 4px solid rgba(153, 153, 153, 1);
+	margin-top: -20px;
+	margin-left: 44px;
+}
+.userCon{
+	width: 160px;
+	height: 368px;
+	position: absolute;
+	top: 55px;
+	left: 0;
+	background: #ededed;
+	box-sizing: border-box;
+	padding: 9px 0;
+	display: none;
+	z-index: 99;
+}
+.userCon>li{
+	line-height: 14px;
+}
+.userCon>li:hover{
+	background: rgba(54, 134, 255, 0.3);
+}
+.userCon>li>a{
+	padding: 10px 20px;
+	display: block;
+	font-size: 14px;
+    line-height: 30px;
+    color: #333333;
+}
+.userCon>li>a>.iconfont{
+	font-size: 18px;
+	color: #ea6f5a;
+	margin-right: 12px;
+	margin-left: 6px;
+}
+.userCon>li>a>span{
+	font-weight: 700;
+}
+/* 登录后样式 */
+.write{
+	float: right;
+	width: 100px;
+	height: 40px;
+	border-radius: 20px;
+	background: rgba(0,0,0,0.2);
+	margin-right: 42px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 8px;
+}
+.write>.iconfont{
+	font-size: 22px;
+	margin-left: 8px;
+}
+.write:hover{
+	background-image: linear-gradient(90deg,#c066a9,#44bec0);
+}
+.headPos{
+	width: 100%;
+	height: 56px;
+}
+/* 头部固定栏结束 */

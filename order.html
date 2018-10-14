@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单页</title>
+	<link rel="stylesheet" href="css/order.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+</head>
+<body>
+	<header class="head">
+		<a href="index.html" class="logo"></a>
+		<!-- 登录前样式 -->
+		<div class="main">
+			<a href="index.html" class="indexPage">首页</a>
+			<div class="searchView">
+				<input type="text" class="search" style="width:162px" placeholder="搜索">
+				<button class="searBtn"><i class="iconfont icon-sousuo"></i></button>
+			</div>
+			<a href="register.html" class="register">注册</a>
+			<a href="login.html" class="login">登录</a>
+		</div>
+		<!-- 登陆后 -->
+		<div class="mainTwo">
+			<a href="index.html" class="indexPageT">发现</a>
+			<a href="index.html" class="indexPageG">关注</a>
+			<a href="index.html" class="indexPageM">消息</a>
+			<div class="searchView">
+				<input type="text" class="search" style="width:162px" placeholder="搜索">
+				<button class="searBtn"><i class="iconfont icon-sousuo"></i></button>
+			</div>
+			<div class="user">
+				<a href="" class="userPhoto">
+					<img src="img/touxiang.jpg" alt="">
+				</a>
+				<ul class="userCon">
+					<li>
+						<a href="usercenter.html">
+							<i class="iconfont icon-wodezhuyexuanzhong"></i><span>个人主页</span>
+						</a>
+					</li>
+					<li>
+						<a href="usercenter.html">
+							<i class="iconfont icon-guanzhu1"></i>
+							<span>我的关注</span>
+						</a>
+					</li>
+					<li>
+						<a href="shopcar.html">
+							<i class="iconfont icon-gouwuche"></i><span>预购文章</span>
+						</a>
+					</li>
+					<li>
+						<a href="order.html">
+							<i class="iconfont icon-dingdan"></i><span>文章订单</span>
+						</a>
+					</li>
+					<li>
+						<a href="account.html">
+							<i class="iconfont icon-svg-"></i><span>我的账户</span>
+						</a>
+					</li>
+					<li>
+						<a href="changeInfo.html">
+							<i class="iconfont icon-shezhi"></i><span>修改信息</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="iconfont icon-tuichu"></i><span>退出</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 登陆后 -->
+		<a href="write.html" class="write">
+			<i class="iconfont icon-write"></i>
+			<span>写文章</span>
+		</a>
+	</header>
+	<section class="headPos"></section>
+	<!-- 订单页面 -->
+	<section class="orderView">
+		<div class="orderTitle">
+			<div class="orderLeft">
+				<a href="usercenter.html" class="userHead"><img src="img/touxiang.jpg" alt=""></a>
+				<div class="info">
+					<a href="usercenter.html" class="userName">~不吃咖啡豆</a>
+					<a href="" class="balancae"><i class="iconfont icon-woyaotouziqianbi"></i><span>余额：</span><span>0.00</span></a>
+				</div>
+			</div>
+			<div class="orderMiddle">
+				<div class="orderNum"><i class="iconfont icon-daizhifu"></i><span>待支付订单:</span><span>5</span></div>
+				<div class="orderNum"><i class="iconfont icon-yizhifu1"></i><span>已完成订单:</span><span>10</span></div>
+				<div class="orderNum"><i class="iconfont icon-quanbusuoyou"></i><span>全部订单:</span><span>15</span></div>
+			</div>
+			<div class="orderRight">
+				<div class="sellLogo">
+					<div class="blogLogo"></div>
+					<div class="sellTitle">
+						<p>文售</p>
+						<p class="orderP">订单区</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="orderCon">
+			<li id="orderConT">
+				<div class="orderTime">下单时间</div>
+				<div class="orderId">订单ID</div>
+				<div class="artName">文章标题</div>
+				<div class="artWriter">文章作者</div>
+				<div class="orderPrice">需付金额</div>
+				<div class="orderState">订单状态</div>
+				<div class="operation">操作</div>
+			</li>
+			<li>
+				<div class="orderTime">2017-10-27</div>
+				<div class="orderId">7356565</div>
+				<div class="artName"><a href="">《我笔下的那个女孩》</a></div>
+				<div class="artWriter"><a href="">不吃咖啡豆</a></div>
+				<div class="orderPrice"><span>20</span><span>新语币</span></div>
+				<div class="orderState">已支付</div>
+				<div class="operation"><a href="">查看详情<i class="iconfont icon-chakangengduojiantou"></i></a></div>
+			</li>
+			<li>
+				<div class="orderTime">2017-10-27</div>
+				<div class="orderId">7356565</div>
+				<div class="artName"><a href="">《我笔下的那个女孩》</a></div>
+				<div class="artWriter"><a href="">不吃咖啡豆</a></div>
+				<div class="orderPrice"><span>20</span><span>新语币</span></div>
+				<div class="orderState">已支付</div>
+				<div class="operation"><a href="">查看详情<i class="iconfont icon-chakangengduojiantou"></i></a></div>
+			</li>
+			<li>
+				<div class="orderTime">2017-10-27</div>
+				<div class="orderId">7356565</div>
+				<div class="artName"><a href="">《我笔下的那个女孩》</a></div>
+				<div class="artWriter"><a href="">不吃咖啡豆</a></div>
+				<div class="orderPrice"><span>20</span><span>新语币</span></div>
+				<div class="orderState">已支付</div>
+				<div class="operation"><a href="">查看详情<i class="iconfont icon-chakangengduojiantou"></i></a></div>
+			</li>
+			<li>
+				<div class="orderTime">2017-10-27</div>
+				<div class="orderId">7356565</div>
+				<div class="artName"><a href="">《我笔下的那个女孩》</a></div>
+				<div class="artWriter"><a href="">不吃咖啡豆</a></div>
+				<div class="orderPrice"><span>20</span><span>新语币</span></div>
+				<div class="orderState">待支付</div>
+				<div class="operation"><a href="">去支付<i class="iconfont icon-chakangengduojiantou"></i></a></div>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

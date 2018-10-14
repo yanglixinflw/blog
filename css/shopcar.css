@@ -1,0 +1,224 @@
+/*
+* @Author: YaYu
+* @Date:   2017-10-27 11:21:35
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-29 20:10:25
+*/
+/*
+* @Author: YaYu
+* @Date:   2017-10-27 11:21:20
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-27 17:38:29
+*/
+@import "header.css";
+body{
+	background: #fcfcfc;
+}
+/* 新语文售区 */
+.sellLogo{
+	width: 166px;
+	height: 64px;
+	background: url('../img/book.png')  no-repeat center/cover;
+	margin:  36px auto;
+}
+.blogLogo{
+	width: 74px;
+	height: 46px;
+	background: url('../img/whiteBlog.png') no-repeat center/cover;
+	float: left;
+	margin-left: 7px;
+	margin-top: 8px;
+}
+.sellTitle{
+	float: right;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	margin-right: 20px;
+	margin-top: 10px;
+	color: #3c86f3;
+}
+.sellTitle>.orderP{
+	padding: 2px 0;
+	font-weight: normal;
+	font-size: 14px;
+	color: #646464;
+}
+/* 订单内容 */
+.orderView{
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.orderTitle{
+	width: 100%;
+	height: auto;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.orderLeft{
+	width: 33.333333%;
+	float: left;
+	padding: 28px 0;
+}
+.userHead{
+	display: inline-block;
+	margin-right: 15px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.userHead>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.info{
+	display: inline-block;
+	padding-top: 15px;
+	vertical-align: middle;
+}
+.info>a{
+	display: block;
+}
+.userName{
+	font-size: 21px;
+    font-weight: 700;
+    color: #000;
+}
+.balancae{
+	padding-top: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #969696
+}
+.balancae>.iconfont{
+	color: #eaad2a;
+	margin-right: 2px;
+}
+.orderMiddle{
+	width: 33.333333%;
+	float: left;
+	padding: 20px 0px;
+	box-sizing: border-box;
+    border-left: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+}
+.orderNum{
+	padding: 6px 46px;
+}
+.orderNum>.iconfont{
+	font-size: 22px;
+	margin-right: 6px;
+	font-weight: 700;
+}
+.orderNum>.icon-gouwuche{
+	color: #ea6f5a;
+}
+.orderNum>span:first-of-type{
+	font-weight: 700;
+	color: #969696;
+	margin-right: 20px;
+}
+.orderNum>span:last-of-type{
+	font-size: 18px;
+	font-weight: 700;
+}
+.topay{
+	padding: 20px 46px 0px;
+}
+.topay>span{
+	font-size: 13px;
+    color: #969696;
+}
+.toPayBtn{
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+	padding: 6px 0;
+    width: 80px;
+    margin-right: 15px;
+    font-size: 15px;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #42c02e;
+}
+.orderRight{
+	width: 33.333333%;
+	float: left;
+}
+.orderCon{
+	width: 958px;
+	height: auto;
+	border: 1px solid #dcdcdc;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 0;
+}
+.orderCon>li{
+	padding: 25px 20px;
+    font-size: 14px;
+    color: #333;
+    background: #f8f8f8;
+}
+.orderCon>li>div{
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	font-size: 12px;
+	word-wrap: break-word;
+}
+.orderCon>#orderConT>div{
+	font-size: 14px;
+    color: #333;
+}
+#orderConT{
+	background: #fcfcfc;
+	border-bottom: 1px solid #dcdcdc;
+	border-radius: 6px 6px 0 0;
+}
+.orderCon>li:nth-child(2n+1){
+	background: #ededed;
+}
+#orderConT>div{
+	display: inline-block;
+	border-right: 1px dashed #c8c8c8;
+}
+.orderTime{
+	width: 135px; 
+}
+.artName{
+	padding-left: 15px;
+	width: 240px;
+}
+.artWriter{
+	padding-left: 15px;
+	width: 140px;
+}
+.orderPrice{
+	padding-left: 15px;
+	width: 140px;
+}
+.orderCancel{
+	padding-left: 15px;
+	width: 120px;
+}
+.orderCancel>a>.iconfont{
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 4px;
+}
+.operation{
+	padding-left: 15px;
+	width: 100px;
+}
+.operation>a>.iconfont{
+	font-size: 12px;
+	font-weight: 700;
+	margin-left: 4px;
+}
+#orderConT>.operation{
+	border: none;
+}

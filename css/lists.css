@@ -1,0 +1,258 @@
+/*
+* @Author: YaYu
+* @Date:   2017-10-26 09:57:22
+* @Last Modified by:   YaYu
+* @Last Modified time: 2017-10-27 09:37:31
+*/
+@import "header.css";
+/* 列表页主体内容*/
+.listBody{
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+/* 专题列表左侧内容 */
+.listLeft{
+	width: 640px;
+	float: left;
+}
+.topicTitle{
+	width: 100%;
+	height: 100px;
+	background-image: linear-gradient(90deg,#d1dae1,#ededed);
+	margin-bottom: 20px;
+	border-radius: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 24px;
+	position: relative;
+}
+.topicTitle>p{
+	padding-top: 4px;
+	font-size: 16px;
+	color: #a1a1a1;
+	margin-right: 10px;
+	font-weight: 700;
+}
+.topicTitle>h3{
+	font-size: 30px;
+	font-weight: 500;
+	color: #5784c6;
+	line-height: 40px;
+}
+.topicLogo{
+	width: 50px;
+	height: 70px;
+	background: url('../img/topicLogo.png') no-repeat center/cover;
+	position: absolute;
+	top: 20px;
+	left: 128px;
+}
+.listTtile{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 30px;
+}
+.topicImg{
+	float: left;
+	width: 80px;
+	height: 80px;
+	background: red;
+	border-radius: 5px;
+	margin-right: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.topicHorn{
+	width: 50px;
+	height: 20px;
+	background-image: linear-gradient(90deg,#d1dae1,#ededed);
+	transform: rotate(45deg);
+	position: absolute;
+	bottom: -6px;
+	left: -15px;
+	box-shadow: 0 0 8px 2px #fff;
+}
+.listCate{
+	float: left;
+	width: 550px;
+	height: 79px;
+	border-bottom: 1px solid #44bec0;
+	box-sizing: border-box;
+	padding-top: 48px;
+}
+.listCateA{
+	width: 78px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #646464;
+	float: left;
+	margin-right: 16px;
+}
+.bottomLine{
+	width: 80px;
+	height: auto;
+}
+.bottomLine::after{
+	display: block;
+	content: "";
+	background: #333;
+	width: 0px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 10px;
+	transition: all 0.5s;
+}
+.bottomLJS::after{
+	display: block;
+	content: "";
+	background: #333;
+	width: 80px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 10px;
+	transition: all 0.5s;
+}
+.listCateA:hover .bottomLine::after{
+	width: 80px;
+}
+.bottomLine>.iconfont{
+	margin-right: 4px;
+}
+/* 列表楼层 */
+.artFloor{
+	min-height: 140px;
+    width: 100%;
+    margin: 0 0 17px;
+    padding: 0 2px 17px 0;
+    border-bottom: 1px solid #d1dae1;
+    word-wrap: break-word;
+    position: relative;
+}
+.artImg{
+	position: absolute;
+    top: 50%;
+    margin-top: -68px;
+    right: 0;
+    width: 150px;
+    height: 120px;
+    border-radius: 4px;
+}
+.artImg>img{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+}
+.artContent{
+	padding-right: 160px;
+}
+.author{
+	margin-bottom: 14px;
+    font-size: 13px;
+}
+.authorP{
+	display: inline-block;
+	width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 5px;
+    background-image: linear-gradient(90deg,#c066a9,#44bec0);
+}
+.authorP>img{
+	width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.authorName{
+	display: inline-block;
+}
+.authorName>a{
+	color: #333333;
+}
+.authorName>.time{
+	padding-left: 3px;
+	color: #969696;
+}
+.title{
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+	margin-bottom: 4px;
+	color: #333;
+}
+.title:hover{
+	text-decoration: underline;
+}
+.content{
+	margin-bottom:  8px;
+    font-size: 13px;
+    line-height: 24px;
+}
+.artCate{
+	display: inline-block;
+    padding: 3px 6px;
+    max-width: 200px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ea6f5a;
+    border: 1px solid rgba(236,97,73,0.7);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.readMore{
+	width: 100%;
+    height: 40px;
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: ##5784c6;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #d1dae1;
+}
+.readMore:hover{
+	background-image: linear-gradient(90deg,#c066a9,#44bec0);
+	color: #fff;
+}
+/* 专题列表右侧内容 */
+.listRight{
+	width: 280px;
+	height: auto;
+	float: right;
+	padding-left: 40px;
+}
+.noticeT{
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	background-image: linear-gradient(180deg,#d1dae1,#ededed);
+	box-sizing: border-box;
+	padding-left: 12px;
+}
+.noticeT>.iconfont{
+	vertical-align: middle;
+	font-size: 20px;
+	color: #ea6f5a;
+}
+.noticeT>span{
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 15px;
+}
+.noticeCon{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	background: #f4f5f6;
+	font-size: 14px;
+	word-wrap: normal;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改信息页</title>
+	<link rel="stylesheet" href="css/changeInfo.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/changeInfo.js"></script>
+</head>
+<body>
+	<header class="head">
+		<a href="index.html" class="logo"></a>
+		<!-- 登录前样式 -->
+		<div class="main">
+			<a href="index.html" class="indexPage">首页</a>
+			<div class="searchView">
+				<input type="text" class="search" style="width:162px" placeholder="搜索">
+				<button class="searBtn"><i class="iconfont icon-sousuo"></i></button>
+			</div>
+			<a href="register.html" class="register">注册</a>
+			<a href="login.html" class="login">登录</a>
+		</div>
+		<!-- 登陆后 -->
+		<div class="mainTwo">
+			<a href="index.html" class="indexPageT">发现</a>
+			<a href="index.html" class="indexPageG">关注</a>
+			<a href="index.html" class="indexPageM">消息</a>
+			<div class="searchView">
+				<input type="text" class="search" style="width:162px" placeholder="搜索">
+				<button class="searBtn"><i class="iconfont icon-sousuo"></i></button>
+			</div>
+			<div class="user">
+				<a href="" class="userPhoto">
+					<img src="img/xinyuBlog.png" alt="">
+				</a>
+				<ul class="userCon">
+					<li>
+						<a href="usercenter.html">
+							<i class="iconfont icon-wodezhuyexuanzhong"></i><span>个人主页</span>
+						</a>
+					</li>
+					<li>
+						<a href="usercenter.html">
+							<i class="iconfont icon-guanzhu1"></i>
+							<span>我的关注</span>
+						</a>
+					</li>
+					<li>
+						<a href="shopcar.html">
+							<i class="iconfont icon-gouwuche"></i><span>预购文章</span>
+						</a>
+					</li>
+					<li>
+						<a href="order.html">
+							<i class="iconfont icon-dingdan"></i><span>文章订单</span>
+						</a>
+					</li>
+					<li>
+						<a href="account.html">
+							<i class="iconfont icon-svg-"></i><span>我的账户</span>
+						</a>
+					</li>
+					<li>
+						<a href="changeInfo.html">
+							<i class="iconfont icon-shezhi"></i><span>修改信息</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="iconfont icon-tuichu"></i><span>退出</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 登陆后 -->
+		<a href="write.html" class="write">
+			<i class="iconfont icon-write"></i>
+			<span>写博客</span>
+		</a>
+	</header>
+	<section class="headPos"></section>
+	<section class="changeView">
+		<div class="aside">
+			<ul class="changeList">
+				<li class="changeClick">
+					<div class="changeIcon"><i class="iconfont icon-jichushezhi"></i></div>
+					<span>基本信息</span>
+				</li>
+				<li>
+					<div class="changeIcon"><i class="iconfont icon-gerenziliao"></i></div>
+					<span>个人资料</span>
+				</li>
+				<li>
+					<div class="changeIcon"><i class="iconfont icon-xiugaimima"></i></div>
+					<span>修改密码</span>
+				</li>
+			</ul>
+		</div>
+		<div class="changeRight">
+			<div class="changeCate">
+				<form action="">
+					<div class="changePhoto">
+						<img src="img/touxiang.jpg" alt="">
+						<a href="" class="cpBtn">更改头像</a>
+					</div>
+					<div class="group">
+						<label for="">昵称</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">电话</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">邮箱</label>
+						<input type="text">
+					</div>
+					<button type="submit" class="saveBtn">保存</button>
+				</form>
+			</div>
+			<div class="changeCate">
+				<form action="">
+					<div class="group">
+						<label for="">姓名</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">性别</label>
+						<input type="radio" name="usex" value="1">
+						<span>男</span>
+						<input type="radio" name="usex" value="2">
+						<span>女</span>
+						<input type="radio" name="usex" value="0">
+						<span>保密</span>
+					</div>
+					<div class="group">
+						<label for="">邮箱</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">个人简介</label>
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<button type="submit" class="saveBtn">保存</button>
+				</form>
+			</div>
+			<div class="changeCate">
+				<form action="">
+					<div class="group">
+						<label for="">输入旧密码</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">输入新密码</label>
+						<input type="text">
+					</div>
+					<div class="group">
+						<label for="">确认新密码</label>
+						<input type="text">
+					</div>
+					<button type="submit" class="saveBtn">确认修改</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
